@@ -902,53 +902,6 @@
         ]
     },
     {
-        "name": "zendframework/zend-skeleton-installer",
-        "version": "0.1.4",
-        "version_normalized": "0.1.4.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/zendframework/zend-skeleton-installer.git",
-            "reference": "3a819fa3ac0fef121dfdb82d10f13649a41d88ed"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/zendframework/zend-skeleton-installer/zipball/3a819fa3ac0fef121dfdb82d10f13649a41d88ed",
-            "reference": "3a819fa3ac0fef121dfdb82d10f13649a41d88ed",
-            "shasum": ""
-        },
-        "require": {
-            "composer-plugin-api": "^1.0",
-            "php": "^5.6 || ^7.0",
-            "zendframework/zend-component-installer": "^1.0 || ^0.7 || ^1.0.0-dev@dev"
-        },
-        "require-dev": {
-            "composer/composer": "^1.4.1",
-            "malukenho/docheader": "^0.1.5",
-            "mikey179/vfsstream": "^1.6.4",
-            "phpunit/phpunit": "^6.0.8 || ^5.7.15",
-            "zendframework/zend-coding-standard": "~1.0.0"
-        },
-        "time": "2017-03-10 23:37:26",
-        "type": "composer-plugin",
-        "extra": {
-            "class": "Zend\\SkeletonInstaller\\Plugin",
-            "branch-alias": {
-                "dev-master": "1.0-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Zend\\SkeletonInstaller\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "description": "Installer plugin for Zend Framework skeleton application"
-    },
-    {
         "name": "zfcampus/zf-development-mode",
         "version": "3.1.0",
         "version_normalized": "3.1.0.0",
@@ -996,6 +949,65 @@
         "homepage": "http://github.com/zfcampus/zf-development-mode",
         "keywords": [
             "framework",
+            "zf2"
+        ]
+    },
+    {
+        "name": "zendframework/zend-db",
+        "version": "2.8.2",
+        "version_normalized": "2.8.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-db.git",
+            "reference": "5926a1a2e7e035546b690cb7d4c11a3c47db2c98"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-db/zipball/5926a1a2e7e035546b690cb7d4c11a3c47db2c98",
+            "reference": "5926a1a2e7e035546b690cb7d4c11a3c47db2c98",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5 || ^7.0",
+            "zendframework/zend-stdlib": "^2.7 || ^3.0"
+        },
+        "require-dev": {
+            "fabpot/php-cs-fixer": "1.7.*",
+            "phpunit/phpunit": "~4.0",
+            "zendframework/zend-eventmanager": "^2.6.2 || ^3.0",
+            "zendframework/zend-hydrator": "^1.1 || ^2.1",
+            "zendframework/zend-servicemanager": "^2.7.5 || ^3.0.3"
+        },
+        "suggest": {
+            "zendframework/zend-eventmanager": "Zend\\EventManager component",
+            "zendframework/zend-hydrator": "Zend\\Hydrator component for using HydratingResultSets",
+            "zendframework/zend-servicemanager": "Zend\\ServiceManager component"
+        },
+        "time": "2016-08-09 19:28:55",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.8-dev",
+                "dev-develop": "2.9-dev"
+            },
+            "zf": {
+                "component": "Zend\\Db",
+                "config-provider": "Zend\\Db\\ConfigProvider"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Db\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "homepage": "https://github.com/zendframework/zend-db",
+        "keywords": [
+            "db",
             "zf2"
         ]
     }
